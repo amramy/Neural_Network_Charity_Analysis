@@ -1,7 +1,7 @@
 # Neural Network Charity Analysis  
 
 ## Overview: 
-Alphabet Soup has been contributing funds to 34,000 organizations over the years and has asked to create a neural network machine learning model to help predict if the money is actually helpful. Utilizing the features in the dataset provided to create a binary classifier that is capable of predicting wheather applicants will be successful if funded by Alphabet Soup. 
+Alphabet Soup has been contributing funds to 34,000 organizations over the years and has asked to create a neural network machine learning model to help predict if the money is helpful. Utilizing the features in the dataset provided to create a binary classifier that is capable of predicting weather applicants will be successful if funded by Alphabet Soup. 
 
 ## Results: 
 
@@ -9,9 +9,9 @@ Alphabet Soup has been contributing funds to 34,000 organizations over the years
 
 * The target variable for this model is the "IS_SUCCESSFUL" column which consist of two values 0 representing not_successful and 1 representing True it is_successful.  
 
-* The feature variables in this model are: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE,     ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS,and ASK_AMT.  
+* The feature variables in this model are: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE,     ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.  
 
-* As the Identification Number (EIN) and the Name were neither targets nor features these two columns were droped from the input dataset. 
+* As the Identification Number (EIN) and the Name were neither targets nor features these two columns were dropped from the input dataset. 
 
 ### Compiling, Training, and Evaluating the Model
 
@@ -19,13 +19,13 @@ Alphabet Soup has been contributing funds to 34,000 organizations over the years
 
 * The target model performance of 75% was not achieved, the closest being 72%. 
 
-* Different variations to the model including droping another column, changing the test ratio, using different activation functions, adding hidden layers, changing the number of Epochs, and changing the amount of neurons. None of these variations were able to produce a model beter than 72%.
+* Different variations to the model including dropping another column, changing the test ratio, using different activation functions, adding hidden layers, changing the number of Epochs, and changing the amount of neurons. None of these variations were able to produce a model better than 72%.
 
 
 ### AlphabetSoupCharity Model Output:
 Accuracy: 72.6%  Loss: 56%
 * 100 Epochs
-* Imput Layer = Relu with 80 nodes
+* Input Layer = Relu with 80 nodes
   * Second Layer = Relu with 30 nodes
 <img width="398" alt="Initial Output" src="https://user-images.githubusercontent.com/111904266/221434686-cceb1976-0dcd-4586-81de-4c9ec6e64e30.png">
 
@@ -37,7 +37,7 @@ Accuracy: 63.2%  Loss: 63.3%
 **Modification**
 * Dropped column "Affiliation"
 * 50 Epochs
-* Imput Layer = Relu with 80 nodes
+* Input Layer = Relu with 80 nodes
   * Second Layer = Relu with 30 nodes
   * Third Layer = Relu with 30 nodes
 <img width="392" alt="Optimize-1" src="https://user-images.githubusercontent.com/111904266/221434690-2bde0418-5af0-4975-ade6-0774a709b42e.png">
@@ -49,7 +49,7 @@ Accuracy: 72.3%  Loss: 57.7%
 **Modification**
 * Test_Size = 80% of data
 * 100 Epochs
-* Imput Layer = Tanh with 80 nodes
+* Input Layer = Tanh with 80 nodes
   * Second Layer = Tanh with 30 nodes
 <img width="392" alt="Optimize-2" src="https://user-images.githubusercontent.com/111904266/221434698-a5c79084-f205-4b86-9e03-815c0592dc4b.png">
 
@@ -60,7 +60,7 @@ Accuracy: 72.7%  Loss: 58.7%
 **Modifications**
 * Test_Size = 70% of data
 * 100 Epochs
-* Imput Layer = Tanh with 100 nodes
+* Input Layer = Tanh with 100 nodes
   * Second Layer = Tanh with 50 nodes
   * Third Layer = Relu with 30 nodes
 <img width="407" alt="Optimize-3" src="https://user-images.githubusercontent.com/111904266/221434702-701791a6-a7a1-4a51-9d71-27a4f3066223.png">
@@ -71,7 +71,7 @@ Accuracy: 72.5%  Loss: 56%
 
 **Modifications**
 * 50 Epochs
-* Imput Layer = Relu with 100 nodes
+* Input Layer = Relu with 100 nodes
   * Second Layer = Relu with 50 nodes
   * Third Layer = Relu with 30 nodes
   * Forth Layer = Relu with 10 nodes
@@ -79,7 +79,7 @@ Accuracy: 72.5%  Loss: 56%
 
 
 ## Summary: 
-After reviewing the results of the various models and not being able to achive an accuracy with more than 72% accompanied with high loss percentage the next model to try would include SVM as it is also a binary classifier I would also try RandomForrestClassifier.  
+After reviewing the results of the various models and not being able to achieve an accuracy with more than 72% accompanied with high loss percentage the next models to try would be SVM, as it is also a binary classifier, and RandomForrestClassifier.  
 
 *****
 ### Resources: 
